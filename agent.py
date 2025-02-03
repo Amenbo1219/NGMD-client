@@ -114,6 +114,7 @@ def send_data():
         "memory_usage": memory_usage,
         "total_memory": total_memory,
         "runner": user,
+        "ip": IP_ADD
     }
 
     if gpu_data:
