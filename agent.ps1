@@ -3,6 +3,7 @@
 $API_HOST = "127.0.0.1" # Please set of your API Host
 $API_PORT = "8000" # Please set of your API Port
 $API_PATH = "/monitor" # Please set of your API PATH
+$IP_ADD = 'XX.XX.XX.XX' # Please set of your IP Address
 
 # nvidia-smi のパス
 $NVIDIA_SMI = "C:\Windows\System32\nvidia-smi.exe" # Defaults NVIDIA-SMI PATH
@@ -98,6 +99,7 @@ function Send-Data {
         "memory_usage" = $memoryInfo["Used"]
         "total_memory" = $memoryInfo["Total"]
         "runner" = $user
+        "ip" = $IP_ADD
     }
 
     if ($gpuData) {
