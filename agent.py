@@ -8,7 +8,7 @@ import re
 API_HOST = "127.0.0.1" # Please set of your IP
 API_PORT = 8000 # Please set of your Port 
 API_PATH = "/monitor" # Please set of API Points
-
+IP_ADD = "XX.XX.XX.XX" # Please set of your IP
 def get_hostname():
     """ホスト名を取得"""
     return socket.gethostname()
